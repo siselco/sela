@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>SELA — Di Sela Harimu</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Fredoka:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+--primary:#032A42;
+--secondary:#2E5D79;
+--bg:#FFFFFF;
+--soft:#F0F0DC;
+--accent:#F0D8B6;
+--earth:#B3926F;
+--light:#D1E2F3;
+}
+
+*{margin:0;padding:0;box-sizing:border-box;}
+body{background:var(--bg);color:var(--primary);font-family:'Inter',sans-serif;scroll-behavior:smooth;}
+
+header{
+position:fixed;top:0;width:100%;background:#fff;
+display:flex;justify-content:space-between;align-items:center;
+padding:16px 32px;border-bottom:1px solid #eee;z-index:1000;
+}
+header img{height:32px;}
+
+nav a{
+margin-left:24px;text-decoration:none;color:var(--primary);
+font-weight:500;position:relative;
+}
+nav a::after{
+content:'';position:absolute;bottom:-4px;left:0;width:0;height:2px;background:var(--primary);transition:0.3s;
+}
+nav a:hover::after{width:100%;}
+
+section{padding:100px 20px 70px;max-width:1100px;margin:auto;}
+
+.hero{text-align:center;background:var(--soft);}
+.hero h1{font-family:'Fredoka';font-size:2.6rem;margin-bottom:10px;}
+.hero p{margin-bottom:20px;color:#555;}
+
+.btn{
+background:var(--primary);color:#fff;padding:12px 26px;border:none;border-radius:30px;
+cursor:pointer;transition:0.3s;
+}
+.btn:hover{background:var(--secondary);transform:translateY(-3px);box-shadow:0 10px 20px rgba(0,0,0,0.15);}
+
+.image-frame{
+width:100%;height:220px;background:#eee;border-radius:12px;margin:15px 0;
+display:flex;align-items:center;justify-content:center;color:#999;
+}
+
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:25px;}
+.card{background:#fff;padding:20px;border-radius:12px;text-align:center;}
+
+footer{background:var(--primary);color:#fff;padding:50px 20px;}
+.footer-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:30px;}
+footer a{color:#fff;text-decoration:none;position:relative;display:block;margin:6px 0;}
+footer a::after{content:'';position:absolute;bottom:0;left:0;width:0;height:2px;background:#fff;transition:0.3s;}
+footer a:hover::after{width:100%;}
+
+.whatsapp{
+position:fixed;bottom:20px;right:20px;background:var(--secondary);
+color:#fff;padding:14px;border-radius:50%;text-decoration:none;
+transition:0.3s;
+}
+.whatsapp:hover{transform:scale(1.1);}
+
+.map{width:100%;height:300px;border-radius:12px;border:none;margin-top:20px;}
+</style>
+</head>
+<body>
+
+<header>
+<img src="logo.png" alt="SELA Logo">
+<nav>
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#products">Products</a>
+</nav>
+</header>
+
+<section id="home" class="hero">
+<h1>Di Sela Harimu</h1>
+<p>Sebentar aja. Tarik napas, lalu lanjut lagi.</p>
+<a href="https://wa.me/6285887770921"><button class="btn">Pesan Sekarang</button></a>
+</section>
+
+<section>
+<h2>Momen Sederhana</h2>
+<div class="image-frame">Insert Lifestyle Image</div>
+<p>Kadang yang kamu butuhkan bukan istirahat panjang, tapi jeda kecil yang cukup untuk melanjutkan hari.</p>
+</section>
+
+<section>
+<h2>Kenapa SELA?</h2>
+<p>SELA dibuat untuk jadi bagian dari keseharianmu. Bukan minuman spesial yang ribet, tapi sesuatu yang selalu bisa kamu nikmati kapan saja.</p>
+</section>
+
+<section id="products">
+<h2>Produk Kami</h2>
+<div class="grid">
+<div class="card">
+<div class="image-frame">Insert Americano Image</div>
+<h3 style="font-family:'Fredoka'">Americano</h3>
+<p>Rasa strong, memiliki after taste malt. Cocok bagi pecinta kopi kultur.</p>
+</div>
+<div class="card">
+<div class="image-frame">Insert Butterscotch Image</div>
+<h3 style="font-family:'Fredoka'">Butterscotch</h3>
+<p>Manisnya pas, tetap ringan dinikmati.</p>
+</div>
+</div>
+</section>
+
+<section>
+<h2>Cara Order</h2>
+<p>1. Pilih menu</p>
+<p>2. Hubungi WhatsApp</p>
+<p>3. Tentukan jadwal (pre-order)</p>
+</section>
+
+<section id="about">
+<h2>Tentang SELA</h2>
+<div class="image-frame">Insert Brand Image</div>
+<p>SELA hadir sebagai momen kecil di tengah kesibukan. Sebuah jeda sederhana untuk kembali tenang.</p>
+
+<h3>Pemesanan</h3>
+<p>Kami melayani pre-order untuk area Jakarta agar setiap minuman tetap fresh.</p>
+<iframe class="map" src="https://maps.google.com/maps?q=jakarta&t=&z=11&ie=UTF8&iwloc=&output=embed"></iframe>
+</section>
+
+<footer>
+<div class="footer-grid">
+<div>
+<h4>SELA Info</h4>
+<a href="#about">About</a>
+<a href="#products">Products</a>
+</div>
+<div>
+<h4>Follow Us</h4>
+<a href="https://instagram.com/minumsela">Instagram</a>
+<a href="https://tiktok.com/@minumsela">TikTok</a>
+</div>
+<div>
+<h4>Contact</h4>
+<a href="https://wa.me/6285887770921">WhatsApp</a>
+</div>
+</div>
+</footer>
+
+<a href="https://wa.me/6285887770921" class="whatsapp">WA</a>
+
+</body>
+</html>
